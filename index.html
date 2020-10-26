@@ -1,13 +1,122 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>alpha&amp;omega (2)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,latin-ext,vietnamese">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
 </head>
 
-<body>
-
+<body id="body">
+    <section class="d-flex flex-column justify-content-between" id="principal">
+        <div id="principal-top">
+            <nav class="navbar navbar-light navbar-expand-md shadow-sm better-bootstrap-nav-left" id="navegacion">
+                <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><i class="icon ion-android-menu icon-menu-class"></i></button>
+                    <div class="collapse navbar-collapse text-lowercase visible" id="navcol-1">
+                        <ul class="nav navbar-nav text-danger mx-auto menu" id="menu">
+                            <li class="nav-item"><a class="nav-link active text-lowercase flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center flex-nowrap order-5" href="#">shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">servicios</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav" id="login-registro" style="font-size: 14px;">
+                            <li class="nav-item"><a class="nav-link active" href="#">login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">registro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container" style="margin-top: 30px;">
+                <h1 class="text-center" id="title">bienvenidos a</h1>
+                <h1 class="display-4 text-center" id="subtitle">My New Kicks<br></h1>
+            </div>
+        </div>
+        <div id="principal-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center" style="font-size: 20px;">somos un sitio web guatemalteco que ofrece&nbsp;</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">
+                        <p class="text-success p-top">+100</p>
+                        <p class="p-bot">productos</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-success p-top">+3</p>
+                        <p class="p-bot">sucursales</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6" style="text-align: center;"><button class="btn btn-lg btn-principal btn-focus btn-hover btn-after" type="button">comprar<i class="icon ion-ios-arrow-right" style="margin-left: 10px;"></i></button></div>
+                    <div class="col" style="text-align: center;"><button class="btn btn-lg btn-principal btn-focus btn-hover btn-after" type="button">Ver ubicaciones<i class="icon ion-ios-arrow-right" style="margin-left: 10px;"></i></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon-arrow-down"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Nuestros productos</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/sneakers.jpg" style="height: 321px;"></a>
+                    <h3 class="name">Lauren Sneaker</h3>
+                    <p class="description">Q500.00</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/sneakers3.jpg" style="width: 289px;height: 321px;"></a>
+                    <h3 class="name" style="color: rgb(37,39,41);">PradaGabardine high-top sneakers<br></h3>
+                    <p class="description">Q600.00</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/sneakers2.jpg" style="height: 325px;"></a>
+                    <h3 class="name">Lauren Sneaker Smooth Calfskin Pink Tea<br></h3>
+                    <p class="description">Q700</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <footer style="font-family: Montserrat, sans-serif;color: #ffffff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Nuestras marcas</h3>
+                        <ul>
+                            <li><a href="#">online shop</a></li>
+                            <li><a href="#">graphic design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Sobre nosotros</h3>
+                        <ul>
+                            <li><a href="#">Compañia</a></li>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>My New Kicks<br></h3>
+                        <p style="font-size: 14px;text-align: justify;"><br><br>Somo una empresa que se dedica a la venta de sneakers, actualmente contamos con 3 sucursales en centros comerciales.<br><br></p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+                <p class="copyright">My New Kicks&nbsp;© 2020</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>

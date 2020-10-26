@@ -101,3 +101,4 @@ _La salida debería ser la siguiente:_
            ├─585 /usr/sbin/apache2 -k start
            └─2586 /usr/sbin/apache2 -k start
 ```
+_**Listo ya tendremos instalado Apache**, solo queda reemplazar la pagina por defecto que se ubica en /var/www/html_
