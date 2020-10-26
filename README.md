@@ -5,3 +5,5 @@
 
  Debemos de ingresar a la consola de aws e ir al apartado de EC2.
 ![alt text](img/ec2.JPG| width=100)
+
+<img src="img/ec2.JPG" width="300" />
