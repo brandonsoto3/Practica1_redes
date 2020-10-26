@@ -24,3 +24,80 @@ _Nos detenemos un momento en la sección **Segurity Groups**, le asignamos un no
 _Revisamos la configuración y le damos lanzar_
 
 <img src="img/lanzar.JPG" width="600" />
+
+_Cuando la instancia este creada nos podremos conectar mediante ssh, una vez dentro instalamos apache_
+
+## Instalación Apache 🔧
+
+### Paso 1-Instalacion 🔧
+_Empezaremos por actualizar el índice de los paquetes locales. Esto, para garantizar que en él se refleje las cargas más recientes de las nuevas versiones de los paquetes._
+
+```
+$ sudo apt update
+```
+
+_A continuación, instala el paquete apache2:_
+
+```
+sudo apt install apache2
+```
+### Paso 2-Configuración cortafuegos 🔧
+_Lista los perfiles de aplicación dentro ufw digitando:_
+
+```
+$ sudo ufw app list
+```
+
+_Se debería desplegar una lista de perfiles de aplicación:_
+
+```
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  OpenSSH
+```
+
+_Permitiremos el tráfico a través del puerto 80:_
+```
+$ sudo ufw allow 'Apache'
+```
+_Se puede verificar el cambio digitando:_
+```
+$ sudo ufw status
+```
+
+_Se te debería desplegar que el tráfico HTTP se encuentra permitido:_
+```
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere                  
+Apache                     ALLOW       Anywhere                  
+OpenSSH (v6)               ALLOW       Anywhere (v6)             
+Apache (v6)                ALLOW       Anywhere (v6)
+```
+
+### Paso 3-Verificar el servicio web 🔧
+_Verifica con el sistema de base systemd que el servicio se está ejecutando al digitar:_
+
+```
+$ sudo systemctl status apache2
+```
+
+_La salida debería ser la siguiente:_
+
+```
+● apache2.service - The Apache HTTP Server
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: active (running) since Tue 2018-04-24 20:14:39 UTC; 9min ago
+ Main PID: 2583 (apache2)
+    Tasks: 55 (limit: 1153)
+   CGroup: /system.slice/apache2.service
+           ├─2583 /usr/sbin/apache2 -k start
+           ├─585 /usr/sbin/apache2 -k start
+           └─2586 /usr/sbin/apache2 -k start
+```
