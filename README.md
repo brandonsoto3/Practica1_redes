@@ -107,4 +107,11 @@ _Para cambiar la vista principal seguimos los pasos del siguiente video_
 
 
 
-* [Dropwizard](https://www.youtube.com/watch?v=nM8Y0UPDXMM) - Pasos para cambiar la vista principal de apache
+* [VIDEO](https://www.youtube.com/watch?v=nM8Y0UPDXMM) - Pasos para cambiar la vista principal de apache
+
+
+_La dirección para visitar el sitio web es:_
+
+
+
+* [Sitio Web](http://ec2-3-131-137-81.us-east-2.compute.amazonaws.com/) - Sitio Principal
