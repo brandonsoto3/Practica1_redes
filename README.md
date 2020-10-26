@@ -102,3 +102,9 @@ _La salida debería ser la siguiente:_
            └─2586 /usr/sbin/apache2 -k start
 ```
 _**Listo ya tendremos instalado Apache**, solo queda reemplazar la pagina por defecto que se ubica en /var/www/html_
+
+_Para cambiar la vista principal seguimos los pasos del siguiente video_
+
+
+
+* [Dropwizard](https://www.youtube.com/watch?v=nM8Y0UPDXMM) - Pasos para cambiar la vista principal de apache
