@@ -114,9 +114,9 @@ _Para cambiar la vista principal seguimos los pasos del siguiente video_
 _La dirección para visitar el sitio web es:_
 
 
-* [EC1](ec2-3-131-137-81.us-east-2.compute.amazonaws.com) - Maquina virtual 1
+* [EC1](http://ec2-3-131-137-81.us-east-2.compute.amazonaws.com) - Maquina virtual 1
 
-* [EC2](ec2-3-138-157-39.us-east-2.compute.amazonaws.com) - Maquina virtual 2
+* [EC2](http://ec2-3-138-157-39.us-east-2.compute.amazonaws.com) - Maquina virtual 2
 
 ## Creacion de balanceador de carga
 
