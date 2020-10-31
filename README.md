@@ -13,7 +13,7 @@ _Seleccionamos la opción lanzar instancia y realizamos las configuraciones nece
 
 * **Versión de Sistema** - *Ubuntu 18*
 * **Tipo de instancia** - *t2-micro* 
-* **VPC** - *dejamos la que default* 
+* **VPC** - *dejamos la default* 
 * **Almacenamiento** - *8GiB SSD*
 
 
@@ -106,12 +106,37 @@ _**Listo ya tendremos instalado Apache**, solo queda reemplazar la pagina por de
 _Para cambiar la vista principal seguimos los pasos del siguiente video_
 
 
-
 * [VIDEO](https://www.youtube.com/watch?v=nM8Y0UPDXMM) - Pasos para cambiar la vista principal de apache
+
+**Este procedimiento se repite para la segunda maquina virtual o EC2**
 
 
 _La dirección para visitar el sitio web es:_
 
 
+* [EC1](ec2-3-131-137-81.us-east-2.compute.amazonaws.com) - Maquina virtual 1
 
-* [Sitio Web](http://ec2-3-131-137-81.us-east-2.compute.amazonaws.com/) - Sitio Principal
+* [EC2](ec2-3-138-157-39.us-east-2.compute.amazonaws.com) - Maquina virtual 2
+
+## Creacion de balanceador de carga
+
+_Debemos de ingresar a la consola de aws e ir al apartado de EC2->Equilibrio de carga->Balanceadores de carga_
+
+<img src="img/load.JPG" width="600" />
+
+_Seleccionamos la opción Create Load Balancer y realizamos las configuraciones necesarias._
+
+* **Tipo de balanceador** - *HTTP/HTTPS*
+* **Esquema** - *internet-facing* 
+* **VPC** - *dejamos la que tiene por default, y elejimos las subredes correspondientes* 
+* **Grupo de seguridad** - *El que creamos anteriormente*
+* **Tipo de target** - *Por instancia*
+
+_Agregamos las instancias creadas anteriormente a nuestro balanceador y le damos en crear_
+
+<img src="img/load2.JPG" width="600" />
+
+_Esperemos un momento a que aws lo configure y podremos utilizarlo_
+
+
+* [Sitio Web](http://loadbalancerredes-1475332818.us-east-2.elb.amazonaws.com/) - Sitio Principal,usando balanceador
