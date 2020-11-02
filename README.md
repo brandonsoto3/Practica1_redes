@@ -140,3 +140,42 @@ _Esperemos un momento a que aws lo configure y podremos utilizarlo_
 
 
 * [Sitio Web](http://loadbalancerredes-1475332818.us-east-2.elb.amazonaws.com/) - Sitio Principal,usando balanceador
+
+## Creacion de dominio gratuito
+
+_Ingresamos con nuestra cuenta de google en:_
+
+* [Freenom](https://my.freenom.com/) - Sitio para registrar dominios gratuitos temporales
+
+_Buscamos, adquirimos y procedemos al checkout del dominio que nos interesa desde la barra de busqueda(comprobando su disponibilidad)_
+
+<img src="img/dominio.JPG" width="600" />
+
+_Luego de haber adquirido el dominio nos vamos a aws, en el area de Route 53_
+
+<img src="img/53.JPG" width="600" />
+
+_Creamos una zona alojada de tipo publica , alli mismo cuando nos solicite dominio colocamos el que adquirimos anteriormente_
+
+<img src="img/53_1.JPG" width="600" />
+
+_Como observamos la zona nos proporciona dos registros, con valores que se utilizaran para configurar el dominio creado_
+
+<img src="img/53_2.JPG" width="600" />
+
+_Esos valores subrayados se ingresaran en la configuración del dns de lado de freenom_
+
+<img src="img/53_3.JPG" width="600" />
+
+
+_Despues de configurar esa parte , regresamos a Route 53 y creamos un nuevo registro simple en nuestra zona, del tipo redireccionamiento sencillo_
+
+<img src="img/53_4.JPG" width="600" />
+
+_Configuramos el registro , de la siguiente manera(redireccion a un balanceador de carga , en cierta zona con el prefijo www_
+
+<img src="img/53_5.JPG" width="600" />
+<img src="img/53_6.JPG" width="600" />
+
+
+* [Sitio Web](http://www.201503893-brandonsoto-redes2.tk/) - Sitio Principal,usando el dominio recien configurado
